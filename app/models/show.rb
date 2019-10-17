@@ -7,4 +7,5 @@ class Show < ActiveRecord::Base
     self.actor.collect do |actor|
      "#{actor.name} - #{actor.show.name}"
     end.join
+  end
 end
